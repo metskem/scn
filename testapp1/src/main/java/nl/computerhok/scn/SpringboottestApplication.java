@@ -1,6 +1,6 @@
-package nl.computerhok.springboot;
+package nl.computerhok.scn;
 
-import nl.computerhok.springboot.listener.ApplicationListener1;
+import nl.computerhok.scn.listener.ApplicationListener1;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.boot.SpringApplication;

@@ -26,9 +26,9 @@ security:
 
 eureka:
   client:
-#    enabled: false
-    register-with-zuul: false
-#    fetch-registry: false
+    enabled: true
+    register-with-eureka: false
+    fetch-registry: true
 
 zuul:
   host:

@@ -1,4 +1,4 @@
-package nl.computerhok.springboot;
+package nl.computerhok.scn;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

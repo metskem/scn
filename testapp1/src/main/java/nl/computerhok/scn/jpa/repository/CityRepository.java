@@ -1,6 +1,6 @@
-package nl.computerhok.springboot.jpa.repository;
+package nl.computerhok.scn.jpa.repository;
 
-import nl.computerhok.springboot.jpa.entity.City;
+import nl.computerhok.scn.jpa.entity.City;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.query.Param;
 

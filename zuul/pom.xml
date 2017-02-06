@@ -3,20 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.computerhok.springboottest</groupId>
+    <groupId>nl.computerhok.scn</groupId>
     <artifactId>zuul</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <name>zuul</name>
     <description>Zuul Router and Filter</description>
-
-    <scm>
-        <developerConnection>scm:git:https://github.com/metskem/zuul.git</developerConnection>
-        <connection>scm:git:https://github.com/metskem/zuul.git</connection>
-        <url>https://github.com/metskem/zuul.git</url>
-        <tag>zuul</tag>
-    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

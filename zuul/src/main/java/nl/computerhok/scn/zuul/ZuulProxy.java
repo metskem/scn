@@ -1,4 +1,4 @@
-package nl.computerhok.springboot.zuul;
+package nl.computerhok.scn.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

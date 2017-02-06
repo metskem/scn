@@ -1,7 +1,7 @@
-package nl.computerhok.springboot.api.resource;
+package nl.computerhok.scn.api.resource;
 
-import nl.computerhok.springboot.jpa.entity.City;
-import nl.computerhok.springboot.jpa.repository.CityRepository;
+import nl.computerhok.scn.jpa.entity.City;
+import nl.computerhok.scn.jpa.repository.CityRepository;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

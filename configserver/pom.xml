@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.computerhok.springboottest</groupId>
+    <groupId>nl.computerhok.scn</groupId>
     <artifactId>configserver</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
@@ -12,8 +12,8 @@
     <description>ConfigServer for Spring Boot</description>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/metskem/configserver.git</developerConnection>
-        <connection>scm:git:https://github.com/metskem/configserver.git</connection>
+        <developerConnection>scm:git:https://github.com/metskem/scn.git</developerConnection>
+        <connection>scm:git:https://github.com/metskem/scn.git</connection>
         <url>https://github.com/metskem/configserver.git</url>
         <tag>configserver</tag>
     </scm>

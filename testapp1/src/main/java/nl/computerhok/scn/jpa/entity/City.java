@@ -1,4 +1,4 @@
-package nl.computerhok.springboot.jpa.entity;
+package nl.computerhok.scn.jpa.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

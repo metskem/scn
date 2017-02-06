@@ -1,4 +1,4 @@
-package nl.computerhok.springboot.configserver;
+package nl.computerhok.scn.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
