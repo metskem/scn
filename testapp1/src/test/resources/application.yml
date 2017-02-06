@@ -1,0 +1,26 @@
+prop1: prop1 from tst application.properties
+prop3: prop3 from tst application.properties
+
+statsd:
+  prefix: sbt
+  host: 172.17.0.2
+
+spring:
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:h2:mem:springboottest;DB_CLOSE_ON_EXIT=FALSE
+    username: sbt
+    password: sbt
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+logging:
+  level:
+    root: warn
+    org:
+      springframework: info
+    nl:
+      computerhok:
+        springboot: warn

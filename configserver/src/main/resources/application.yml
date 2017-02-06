@@ -1,0 +1,37 @@
+spring:
+  config:
+    name: configserver
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/metskem/{application}-config.git  # this does not work on cf, it tries but fails ssh because of com.jcraft.jsch.JSchException: UnknownHostKey
+          searchPaths: '{profile}'  # make sure you set your profile on the cmdline (not in application.properties), with "--spring.profiles.active=testprofile"
+server:
+  tomcat:
+    basedir: /tmp/configserver/tomcat
+    accesslog:
+      directory: /tmp/configserver/accesslog
+      enabled: true
+      pattern: '%t %a "%r" %s (%D ms)'
+
+logging:
+  level:
+    org.springframework.cloud: 'info'
+    com.netflix.eureka: 'info'
+    com.netflix.discovery: 'info'
+
+security:
+  user:
+    name: testuser
+    password: testpassword
+
+eureka:
+  client:
+    enabled: true
+#    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

@@ -1,0 +1,11 @@
+env:
+  JBP_CONFIG_JMX: '{enabled: false}'
+
+applications:
+   - path: target/configserver-0.0.9.jar
+     memory: 768M
+     instances: 1
+     name: configserver
+     host: configserver-${random-word}
+     disk_quota: 512M
+     buildpack: java_buildpack

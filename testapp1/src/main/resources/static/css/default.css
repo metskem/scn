@@ -1,0 +1,16 @@
+body {
+background-image: url(../images/firenze.jpg);
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: top center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+}
+
+a {
+    color: #00f;
+}
+p, a span {
+    color: #000;
+}

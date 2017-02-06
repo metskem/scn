@@ -1,0 +1,4 @@
+prop1 = prop1 from test application.properties
+logging.level.root=error
+logging.level.org.springframework=warn
+logging.level.nl.computerhok.springboot=warn

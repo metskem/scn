@@ -1,0 +1,33 @@
+spring:
+  config:
+    name: eureka
+  application:
+    name: eureka
+
+server:
+  tomcat:
+    basedir: /tmp/eureka/tomcat
+    accesslog:
+      directory: /tmp/eureka/accesslog
+      enabled: true
+      pattern: '%t %a "%r" %s (%D ms)'
+  port: 8761
+
+logging:
+  level:
+    org.springframework.cloud: 'INFO'
+    com.netflix.eureka: 'WARN'
+    com.netflix.discovery: 'WARN'
+
+security:
+  basic:
+    enabled: false
+  user:
+    name: testuser
+    password: testpassword
+
+eureka:
+  client:
+#    enabled: false
+    register-with-eureka: false
+    fetch-registry: false

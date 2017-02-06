@@ -1,0 +1,65 @@
+# you can override prop1 by setting the envvar prop1, or specify cmdline arg --prop1=anothervalue
+prop1: prop1 from src application.properties
+prop2: prop2 from src application.properties
+prop3: prop3 from src application.properties
+
+server:
+  port: 8081
+
+statsd:
+  prefix: sbt
+  host: 172.17.0.2
+
+spring:
+  config:
+    name: testapp1
+  application:
+    name: testapp1
+#  jmx:
+#    enabled: true
+  datasource:
+    url: jdbc:mysql://localhost/springboottest?useSSL=false
+    username: sbtuser
+    password: sbtpassword
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+security:
+  basic:
+    enabled: false
+  user:
+    name: testuser
+    password: testpassword
+
+endpoints:
+  env:
+    sensitive: false
+  beans:
+    sensitive: false
+  refresh:
+    sensitive: false
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        data:
+          jpa: debug
+    nl:
+      computerhok:
+        springboot: debug
+
+eureka:
+  client:
+    enabled: true
+#    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+#      defaultZone: https://servicediscovery.eu-gb.bluemix.net/api/eureka/${service.registry.auth.token}/v2/
+#  instance:
+#    hostname: ${vcap.application.uris[0]:localhost}
+#    nonSecurePort: 80

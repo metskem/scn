@@ -1,0 +1,15 @@
+env:
+  JBP_CONFIG_JMX: '{enabled: true}'
+
+applications:
+   - path: target/testapp1-0.1.1.jar
+     memory: 768M
+     instances: 1
+     name: testapp1
+     host: testapp1-${random-word}
+     disk_quota: 512M
+     buildpack: java_buildpack
+
+services:
+   - testapp1-database
+   - testapp1-registry

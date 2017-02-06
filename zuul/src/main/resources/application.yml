@@ -1,0 +1,39 @@
+spring:
+  config:
+    name: zuul
+  application:
+    name: zuul
+
+server:
+  tomcat:
+    basedir: /tmp/zuul/tomcat
+    accesslog:
+      directory: /tmp/zuul/accesslog
+      enabled: true
+      pattern: '%t %a "%r" %s (%D ms)'
+  port: 9080
+
+logging:
+  level:
+    org.springframework.cloud: 'INFO'
+
+security:
+  basic:
+    enabled: false
+  user:
+    name: testuser
+    password: testpassword
+
+eureka:
+  client:
+#    enabled: false
+    register-with-zuul: false
+#    fetch-registry: false
+
+zuul:
+  host:
+    maxTotalConnections: 15
+    maxPerRouteConnections: 3
+  ignoredServices: '**'
+  routes:
+    testapp1: /testapp1/**
