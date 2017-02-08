@@ -24,3 +24,7 @@ logging:
     nl:
       computerhok:
         springboot: warn
+
+eureka:
+  client:
+    enabled: false
