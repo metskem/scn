@@ -1,4 +1,4 @@
-# you can override prop1 by setting the envvar prop1, or specify cmdline arg --prop1=anothervalue
+# you can override prop1 by setting the envvar prop1, or specify cmdline arg -Dprop1=anothervalue
 prop1: prop1 from src application.properties
 prop2: prop2 from src application.properties
 prop3: prop3 from src application.properties
@@ -21,6 +21,11 @@ spring:
     url: jdbc:mysql://localhost/springboottest?useSSL=false
     username: sbtuser
     password: sbtpassword
+    tomcat:
+      max-active: 3
+      max-idle: 1
+      min-idle: 0
+      initial-size: 1
   jpa:
     properties:
       hibernate:
@@ -42,6 +47,8 @@ endpoints:
     sensitive: false
 
 logging:
+  pattern:
+    console: "%clr(%d{yy-MM-dd HH:mm:ss}){faint} %clr(%5p) %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
   level:
     root: info
     org:

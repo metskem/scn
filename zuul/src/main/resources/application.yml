@@ -14,8 +14,10 @@ server:
   port: 9080
 
 logging:
-  level:
-    org.springframework.cloud: 'INFO'
+  pattern:
+    console: "%clr(%d{yy-MM-dd HH:mm:ss}){faint} %clr(%5p) %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+    level:
+      org.springframework.cloud: 'INFO'
 
 security:
   basic:
