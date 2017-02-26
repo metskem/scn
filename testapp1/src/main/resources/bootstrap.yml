@@ -1,0 +1,12 @@
+logging:
+  pattern:
+    console: "%clr(%d{yy-MM-dd HH:mm:ss}){faint} %clr(%5p) %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+  level:
+    root: info
+    org:
+      springframework:
+        data:
+          jpa: debug
+    nl:
+      computerhok:
+        springboot: debug

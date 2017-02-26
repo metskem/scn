@@ -18,6 +18,7 @@ import javax.ws.rs.core.Context;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RefreshScope
@@ -60,6 +61,11 @@ public class Resource1 {
         return requestinfo;
     }
 
+    @RequestMapping(value = "/envvars", method = RequestMethod.GET)
+    @Produces("application/json")
+    public Map<String,String> envvars() {
+        return System.getenv();
+    }
 
     @RequestMapping(value="/echo/{message}", method= RequestMethod.GET)
     @Produces("application/json")
